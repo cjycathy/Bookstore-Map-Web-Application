@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+
+		<link rel="stylesheet" href="../home.css" type="text/css" />
+		<link rel="stylesheet" href="bookstorerecord.css" type="text/css">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+		integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+
+		<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+
+		<title>Record a Bookstore</title>
+
+	</head>
+
+<body>
+
+	<div id="general">
+
+		<div id="header">
+
+		<div id="first_line">
+
+		<br>
+
+		<div><img width="20" ></div>
+
+		</div>
+		<h1>Reading Map</h1>
+
+		</div>
+		<!--end of header box-->
+
+		<div id="menu">
+
+			<div id="menu_bar">
+
+			<ul id="nav">
+
+
+				<li class="menu_pod"><a href="../index.html">Home</a></li>
+
+				<li class="menu_pod"><a href="../map.html">Map</a></li>
+				<li class="menu_pod" id="re"><a href="#">Report</a>
+	
+					<ul>
+						<li><a href="bookstorerecord.html" id = "sub">Bookstore</a></li>
+						<li><a href="../activity/activityrecord.html" id = "sub">Activity</a></li>
+		  
+
+			  
+			  
+					</ul>
+			  
+				</li>
+				<li class="menu_pod"><a href="../activity/activities.html">Activities</a></li>
+
+
+			</ul><!--End of Menubar Div -->
+
+			</div><!--end of menu_bar-->
+
+		</div><!--end of menu-->
+
+
+		<div id="content_area">
+				<div id="content">
+						<h2>Record a Bookstore</h2>
+						<form id="report" method="post" enctype = "multipart/form-data">
+							<div class="table">
+								<div class="row">
+									<div class="col-25">
+										<label for="storename">*Bookstore Name:</label>
+									</div>
+			
+									<div class="col-75">
+										<input type="text" id = "storename" name="storename" required>
+									</div>
+								</div>
+			
+								<div class="row">
+										<div class="col-25">
+											<label for="address">*Bookstore Address:</label>
+										</div>
+				
+										<div class="col-75">
+											<input type="text" id = "address" name="address" required> 
+										</div>
+								</div>
+			
+								<div class="row">
+										<div class="col-25">
+											<label for="lat"> Latitude:</label>    
+										</div>
+										<div class="col-75">
+											<input type="number" name="lat" id="lat" min="-90.0000" max="90.0000" step="0.000001">                             
+										</div>                        
+								</div>
+			
+								<div class="row">
+										<div class="col-25">
+											<label for="lng"> Longitude:</label>    
+										</div>
+										<div class="col-75">
+											<input type="number" name="lng" id="lng" min="-180.0000" max="180.0000" step="0.000001">                             
+										</div>                       
+								</div>
+			
+								<div class="row">
+									<div class="col-25">
+										<label for="openhour"> Opening Hour:</label>
+									</div>
+									<div class="col-75">
+										<input type="text" name="openhour" id="openhour" >
+									</div>             
+								</div>
+			
+								<div class="row">
+									<div class="col-25">
+										<label for="phone"> Phone Number:</label>
+									</div>
+									<div class="col-75">
+										<input type="number" name="phone" id="phone" >                          
+									</div>                        
+								</div>
+			
+								<div class="row">
+									<div class="col-25">
+										<label for="link"> Official Link:</label>
+									</div>
+									<div class="col-75">
+										<input type="text" name="link" id="link">                          
+									</div>                        
+								</div>
+			
+								<div class="row">
+									<div class="col-25">
+										<label> Picture</label>
+									</div>
+									<div class="col-75">
+										<input type="file" name="imgFile" id="imgFile">
+									</div>
+										
+								<div class="row">
+									<div>
+										<button name="cancel" type="reset">Cancel</button>
+										<button name="submit" type="submit">Submit</button>                            
+									</div>                        
+								</div>
+							</div>
+						</form>
+			
+						<div id="result">
+						
+					</div>
+
+		</div><!--End of content_area-->
+
+			<div id="note">
+					<p>note: If you are at the bookstore right now, you can allow the browser to acquire your location.</p>
+				</div>
+
+		</div>
+
+		<div id="mapCanvas"></div>
+
+		<script src="bookstorerecord.js"></script>
+
+		<div id="footer">
+
+			<p id="cr">&copy; 
+			2019 JINYI CAI All Rights Reserved     &emsp;&emsp;     Contact: cjycathy@umd.edu</p>
+
+		</div><!--End of footer-->
+
+
+
+	</div>
+</body>
+
+</html>

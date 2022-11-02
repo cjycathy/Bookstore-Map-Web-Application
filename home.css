@@ -1,0 +1,306 @@
+/* I referenced the website of http://shakeandco.com/shake_trade/rush_page.php 
+and adapted it to decorate my web application */
+
+body 
+{
+background-color: #dbd2cc;
+margin: 0em  0em 0em 0em;
+padding: 0em  0em 0em 0em;
+}
+
+
+#container {
+background-color: white;
+
+}
+
+#general{
+width: 1200px;
+
+margin-left: auto;          	
+margin-right: auto;
+background-color: white;
+color: #000000;
+border-style: none;
+border-width: thin;
+border-color: red;
+padding: 0em  0em 0em 0em;  
+}
+
+#header{
+height: 8.75em;
+font-family: 'josefin_sansbold', Arial, Verdana, sans-serif;
+font-size: .875em;
+letter-spacing: .3em;
+margin-left: auto;          	
+margin-right: auto;
+background-image: url("./images/home4.jpg");
+border-style: none;
+border-width: thin;
+border-color: black;
+padding: 1.563em  3.125em 2.813em 3.125em;
+}
+
+
+#first_line {
+clear: float;
+height: 2em;
+border-style: none;
+border-width: thin;
+border-color: black;
+padding: 0em  0em 0em 0em;  
+margin: 0em  0em 1em 0em;  
+}
+
+#menu {
+position: relative;
+z-index: 300;
+clear: float;
+background-color: white;
+height: 1em;
+border-width: thin ;
+border-bottom-style: solid;            
+border-color: black;
+margin: 0em 0em 0em 0em ;  
+padding: 1em 3.125em 1em 3.125em ;  
+}
+
+#menu_bar {
+width: 90em;
+height: 1.25em;
+border-width: thin ;
+border-style: none;            
+border-color: pink;
+padding: 0em 0em 0em 0em ;  
+}
+
+
+
+
+#nav, #nav ul {
+height: 1.25em;
+padding: 0;
+margin: 0;
+list-style: none;
+border-width: thin ;
+border-style: none;            
+border-color: pink;
+
+}
+
+#nav a {
+display: block;
+border-width: thin ;
+border-style: none;            
+border-color: purple;
+}
+
+#nav li {
+float: left;
+margin-right: 3.1em;
+border-width: thin ;
+border-style: none;            
+border-color: purple;
+width: 6%;
+margin-left: 100px;
+
+}
+
+#nav li ul {
+position: absolute;
+width: 25em;
+height: 25em;
+left: -999em;
+border-width: thin ;
+border-style: none;            
+border-color: purple;
+margin: 0em 0em 0em 0em ;  
+padding: 0em 0em 0em 0em ;  
+}
+
+#nav li:hover ul {
+left: auto;
+}
+
+a:link {
+color: #000000;
+text-decoration: none;
+}
+
+a:visited {
+color: #000000;
+text-decoration: none;
+}
+
+a:hover {
+color: #978b82;
+text-decoration: none;
+}
+
+a:active {
+color: #000000;
+text-decoration: none;
+} 
+
+
+a.home:link {
+color: white;
+text-decoration: none;
+}
+
+a.home:visited {
+color: white;
+text-decoration: none;
+}
+
+a.home:hover {
+color: black;
+text-decoration: none;
+}
+
+a.home:active {
+color: white;
+text-decoration: none;
+} 
+
+
+a.item:link {
+color: black;
+text-decoration: none;
+}
+
+a.item:visited {
+color: black;
+text-decoration: none;
+}
+
+a.item:hover {
+color: white;
+text-decoration: none;
+}
+
+a.item:black{
+color: white;
+text-decoration: none;
+} 
+
+
+.menu_pod {
+font-family: 'josefin_sansbold', Arial, Verdana, sans-serif;
+font-size: 1em;
+letter-spacing: .2em;
+border-top-style: none;
+border-right-style: none;
+border-bottom-style: none;            
+border-left-style: solid;
+border-color: black;
+margin: 0em 0em 0em 0em ;  
+padding-right: 50px ;    
+border-width: thin;
+}  
+
+#content_area {
+position: relative;
+margin: auto;
+border-style: none;
+background-color: #ffffff;
+border-width: thin;
+border-color: blue;
+padding: 1.563em  0em 1.563em 0em;
+height: 700px;
+}
+
+
+#footer {
+float: left;
+width: 94em;
+text-align: center;
+font-family: 'josefin_sanssemibold', Verdana, sans-serif;
+font-size: .750em;
+letter-spacing: .2em;
+height: 15px;
+background-color: #978b82;
+border-style: none;
+border-width: thin;
+border-color: yellow;
+padding: 1.563em  3.125em 1.563em 3.125em;    
+}
+
+
+#cr {
+
+    font-family: 'josefin_sanssemibold', Verdana, sans-serif;
+    font-size: .750em;
+    letter-spacing: .2em;
+    text-align: center;
+    border-color: black;
+    border-width: thin ;
+    border-style: none;            
+    margin: 0em  0em 0em 0em ;  
+    padding: 0em 0em 0em 2em ;    
+}
+
+
+#gallery li{
+    float: left;
+    width: 45%;
+    height: 340px;
+    text-align: center;
+    list-style: none;
+}
+
+h1{
+    color: #ffffff;
+    text-align: center;
+    font-style: oblique;
+    text-shadow:0 1px 1px black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    margin-bottom: 40px;
+    margin-left: 300px;
+    background-color: #ffffff6e;
+    width: 500px;
+    letter-spacing: .15em;
+}
+
+#g3 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    letter-spacing: .2em;
+    line-height: 2em;
+}
+
+#g2 p{
+    font-family: "Guardian Text Egyptian Web",Georgia,serif;
+    font-size: 1em;
+    letter-spacing: .2em;
+    line-height: 2em;
+}
+
+#more p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    letter-spacing: .1em;
+    line-height: 1em;
+}
+
+#re:hover{
+    display:block;
+}
+
+#sub{
+    background-color: white;
+    color: #000000;
+    padding: 1em;
+
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    float: left;
+}
+nav ul li{
+    position:absolute;
+    
+}
+
+

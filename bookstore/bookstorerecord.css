@@ -1,0 +1,110 @@
+div.table .row .col-25{
+    float: left;
+    width: 20%;
+}
+
+div.table .row .col-75{
+    float: left;
+    width: 60%;
+}
+
+div.table .row{
+    float: none;
+    padding: 1.5em;
+}
+
+#storename, #address, #openhour, #phone,#intro,#link, #lat, #lng  {
+    padding: 8px;
+    margin: 3px;
+    width:100%;
+    background-color:#d6d2cf;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 20px;
+    box-sizing:border-box;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    font-family: Arial;
+}
+
+h2{
+    font-family: 'josefin_sansbold';
+    font-size: 1.7em;
+    letter-spacing: .3em;
+    font-weight: inherit;
+    text-align: center;
+    border-width: thin;
+    border-style: none;
+    padding: 2em 0em 0em 0em;
+    margin: 0em 0em 0em 0em;
+    color: #000000;
+}
+
+label{
+    font-family: Helvetica, sans-serif;
+    font-size: 1em;
+    font-style: initial;
+    padding: 8px;
+    color:#020202;
+    display: inline-block;
+}
+
+#report{
+    margin-left: 200px;
+    border-radius: 10px;
+    padding:0px;
+    clear: both;
+    overflow:auto;
+}
+
+/*form::after { 
+    content: "";
+    display: block; 
+    clear: both;
+  }*/
+
+button{
+    background-color:#978b82;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: -20px;
+    margin-left: 30px;
+    float: right;
+}
+
+button:hover{
+    background-color: #645b54;
+}
+
+#mapCanvas{
+    width: 90%;
+    height: 500px;
+    margin: 30px;
+    margin-left: 55px;
+}
+
+#imgFile{
+    margin-left: 10px;
+}
+
+#result{
+    height:100%;
+}
+
+#content_area {
+    position: relative;
+    margin: auto;
+    border-style: none;
+    background-color: #ffffff;
+    border-width: thin;
+    border-color: blue;
+    padding: 1.563em  0em 1.563em 0em;
+    height: auto;
+    }
+
+#note{
+    font-family: "Guardian Text Egyptian Web";
+    font-size: 0.9em;
+    font-style: italic;
+    margin-left: 55px;
+}
